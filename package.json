@@ -1,4 +1,10 @@
 {
+  "name": "goal-tracking-app",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm ci && npm run build",
+    "start": "cd frontend && npx serve dist -s -l ${PORT:-8080}"
+  },
   "dependencies": {
     "react-markdown": "^10.1.0"
   }
